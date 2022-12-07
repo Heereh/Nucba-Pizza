@@ -1,4 +1,5 @@
 @media (max-width: 600px) {
+  /** Header */
     .navbar-list {
         display: none;
         position: absolute;
@@ -30,6 +31,8 @@
       #menu-toggle:checked + .navbar-list {
         display: flex;
       }
+
+      /**  Hero*/
 }
 
     
