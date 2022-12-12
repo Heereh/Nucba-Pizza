@@ -19,7 +19,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  /* height: 80px; */
+  height: 80px;
 }
 .navbar {
   display: flex;
@@ -54,7 +54,7 @@ header {
 .usernaranja {
   width: 48px;
   height: 45px;
-  padding-left: 20px; 
+  padding-left: 20px;
 }
 
 .logo {
@@ -70,19 +70,20 @@ body {
 /* Hero */
 #hero {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  max-width: 1200px;
-  padding-top: 150px;
+  padding-top: 120px;
+  width: 100%;
 }
 
 .hero-title {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  text-align: start;
   color: var(--Fonts-wt);
   font-family: var(--font-monts);
+  padding-left: 4%;
 }
 .hero-title > h1 {
   font-size: 4rem;
@@ -90,35 +91,22 @@ body {
 }
 
 .hero-title > h2 {
-  padding: 10px 120px 0 0;
   font-size: 3.2rem;
   line-height: 66px;
-  /* position: absolute;
-  right: 520px;
-  left: 392px;
-  bottom: 900px;
-  top: 200px;  */
 }
 
 .hero-title > p {
   font-size: 1.2rem;
   line-height: 56px;
   font-weight: 300;
-  padding-left: 8px;
   font-family: var(--font-monts);
-
-  /* position: absolute;
-  right: 620px;
-  left: 394px;
-  bottom: 900px;
-  top: 325px; */
 }
 #label-button {
-  position: absolute;
-  right: 620px;
-  left: 380px;
-  bottom: 900px;
-  top: 500px;
+  position: relative;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
   width: 166px;
   height: 50px;
   border-radius: 15px;
@@ -130,30 +118,32 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
-  text-align: center;
   letter-spacing: 0.5px;
   color: var(--Fonts-wt);
+}
+.hero-title > label {
+  padding-top: 20px;
 }
 
 .img-pizzas {
   display: flex;
+
+  /* padding-left: 2%; */
 }
 
-#Pizza-hero-1 {
-  width: 265px;
-  height: 265px;
-  position: absolute;
-  top: 200px;
-  bottom: 0;
-  right: 0px;
-  left: 1100px;
+#pizza-hero-1 {
+  width: 18rem;
+  height: 18rem;
+  background: no-repeat center/80% url(Assets/Hero/image\ 34.svg);
+  position: relative;
+  top: -28;
+  left: 190;
 }
-#Pizza-hero-2 {
-  width: 392px;
-  height: 392px;
-  position: absolute;
-  top: 100px;
-  bottom: 0;
-  left: 1220px;
-  right: 0;
+#pizza-hero-2 {
+  width: 24rem;
+  height: 20rem;
+  background: no-repeat center/80% url(Assets/Hero/pizza\ 2.svg);
+  position: relative;
+  top: -80px;
+  z-index: 2;
 }
