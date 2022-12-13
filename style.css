@@ -157,3 +157,73 @@ body {
   left: 1220px;
   right: 0;
 }
+
+/*Categorias*/
+#categorias{
+  background-color: #131415;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  max-width: 1200px;
+  padding: 2rem;
+  gap: 10px;
+  font-family: var(--font-monts);
+}
+
+
+#categorias-card-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;  
+  gap: 15px;
+}
+
+.categorias-card{
+  position: relative;
+  width: 147px;
+  height: 171px;
+  background-color: #363636;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  cursor: pointer;
+}
+
+
+.img-principal{
+  z-index: 10;
+}
+
+.img-secundaria{
+  position: absolute;
+  top:22px;
+  left: 35px;
+  filter: blur(4px);
+}
+
+.img-secundaria-pizza{
+  position: absolute;
+  top:30px;
+  left: 40px;
+  filter: blur(4px);
+}
+
+
+.categorias-name{
+  text-align: center;
+  font-size: 13px;
+  font-weight:500;
+}
+
+.categorias-decoration{
+  background: linear-gradient(45deg, #FFA400,#FC2933);
+  height: 3px;
+  width: 20px;
+  border-radius: 5px;
+}
