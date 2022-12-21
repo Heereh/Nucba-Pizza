@@ -1,6 +1,6 @@
 # Nucba-Pizza
 
-Grupo del trabajo Nucba pizza:
+Integrantes del Nucba pizza:
 
 Alaniz Martinez Kurt </br>
 Juan ignacio nuñez </br>
