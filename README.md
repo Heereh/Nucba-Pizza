@@ -2,8 +2,8 @@
 
 Grupo del trabajo Nucba pizza:
 
-Alaniz Martinez Kurt
-Juan ignacio nuñez
-María Cecilia Uribarren
-Sofia Madrid
-Nahuel Gonzalo Arévalo
+Alaniz Martinez Kurt </br>
+Juan ignacio nuñez </br>
+María Cecilia Uribarren </br>
+Sofia Madrid </br>
+Nahuel Gonzalo Arévalo </br>
