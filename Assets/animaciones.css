@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 230px;
+}
+
+.cantidad-pedido {
+  transition: all 0.2s ease-in;
+}
+.cantidad-pedido:hover {
+  cursor: pointer;
+  background: #ffa400;
+  transition: all 0.2s ease-out;
+}
+
+
+/*! Animaciones  */
+
+#cart-toggle:checked + .cart {
+  transform: translateX(0%);
+  transition: all 0.6s ease-in-out;
+}
