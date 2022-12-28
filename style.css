@@ -3,13 +3,9 @@
 :root {
   /* Color */
   --background-cl: #131415;
-  --Fonts-wt: #ffffff;
+  --color-wt: #ffffff;
   /* Fonts */
-  --font-monts: 'Montserrat', sans-serif;
-}
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 230px;
+  /* --font-monts: 'Montserrat', sans-serif; */
 }
 * {
   margin: 0;
@@ -97,7 +93,9 @@ header {
   height: calc(100vh - 100px);
   overflow-y: scroll;
   z-index: 3;
-  display: none;
+  /* display: none; */
+  transform: translateX(200%);
+  transition: all 0.6s ease-in-out;
 }
 
 .cart::-webkit-scrollbar {
@@ -176,7 +174,7 @@ header {
   background-color: #272d37;
 }
 .divisor {
-  border: .1px solid #fff;
+  border: 0.1px solid #fff;
   margin-top: 20px;
 }
 .cart-total {
@@ -196,15 +194,16 @@ header {
 }
 .botton-comprar {
   background: linear-gradient(98.81deg, #ffa100 -0.82%, #ff005c 101.53%);
-  border-radius: 27.5px;
-  width: 155px;
-  height: 159px;
+  border-radius: 17.5px;
+  width: 165px;
+  height: 199px;
   font-weight: 500;
   border-bottom: 0px;
   font-size: 24px;
   cursor: pointer;
   border: none;
   color: #ffffff;
+  padding: 7px;
 }
 
 /* cart animacion */
@@ -236,7 +235,7 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   text-align: start;
-  color: var(--Fonts-wt);
+  color: var(--color-wt);
   font-family: var(--font-monts);
   padding-left: 4%;
 }
@@ -257,6 +256,7 @@ main {
   font-family: var(--font-monts);
 }
 #label-button {
+  cursor: pointer;
   position: relative;
   right: 0;
   left: 0;
@@ -274,7 +274,7 @@ main {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.5px;
-  color: var(--Fonts-wt);
+  color: var(--color-wt);
 }
 .hero-title > label {
   padding-top: 20px;
