@@ -7,7 +7,10 @@
   /* Fonts */
   --font-monts: 'Montserrat', sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 230px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -262,15 +265,20 @@ main {
   flex-direction: column;
   color: #ffffff;
   max-width: 1200px;
-  padding: 2rem;
+  padding-top: 2rem;
   gap: 10px;
   font-family: var(--font-monts);
 }
 
+#categorias h3 {
+  padding: 0 0 2rem 2rem;
+}
 #categorias-card-container {
   width: 100%;
   height: auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 15px;
 }
