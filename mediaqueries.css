@@ -99,3 +99,23 @@
     align-items: center;
   }
 }
+
+@media (max-width: 576px) {
+  .cart {
+    left: 0;
+    width: 100%;
+  }
+  .cart-pedido {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .logo {
+    padding-left: 20px;
+  }
+  .navbar {
+    gap: 30px;
+  }
+  #hero {
+    padding-top: 200px;
+  }
+}
