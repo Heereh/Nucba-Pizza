@@ -80,6 +80,138 @@ header {
   display: none;
 }
 
+/* Carrito */
+
+#cart-label {
+  cursor: pointer;
+}
+.cart {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  padding: 50px 30px;
+  background: var(--background-cl);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  z-index: 3;
+  display: none;
+}
+
+.cart::-webkit-scrollbar {
+  display: none;
+}
+.cart h2 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: var(--font-monts);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-pedido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background: #252525;
+  box-shadow: 0px 0px 50px rgb(1 2 7 / 50%);
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.cart-pedido img {
+  /* height: 175px; */
+  width: 200px;
+}
+.pedido-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.pedido-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+}
+.Precio {
+  color: #ffff;
+  font-weight: 400;
+  font-size: 16px;
+}
+.pedido-precio {
+  background: linear-gradient(98.81deg, #ffa100 -0.82%, #ff005c 101.53%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 19px;
+}
+.cantidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.cantidad-pedido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10px;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.cantidad-count {
+  color: #ffff;
+}
+.up {
+  border: 1px solid #fff;
+}
+.down {
+  border: 1px solid #fff;
+  background-color: #272d37;
+}
+.divisor {
+  border: .1px solid #fff;
+  margin-top: 20px;
+}
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.cart-total p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+}
+.cart-total span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
+.botton-comprar {
+  background: linear-gradient(98.81deg, #ffa100 -0.82%, #ff005c 101.53%);
+  border-radius: 27.5px;
+  width: 155px;
+  height: 159px;
+  font-weight: 500;
+  border-bottom: 0px;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+}
+
+/* cart animacion */
+#cart-toggle:checked + .cart {
+  display: flex;
+}
+/*! Html  */
 body {
   background-color: var(--background-cl);
 }
