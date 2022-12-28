@@ -1,36 +1,62 @@
 @media (max-width: 952px) {
   /* Tablet */
-  .nav__label {
-    display: block;
-    cursor: pointer;
-    padding-right: 50px;
-  }
 
   /** Header */
-  .list ul {
+  header {
+    border-bottom: 1px solid #ffff;
+  }
+  .lisdw {
+    display: flex;
+  }
+  .list {
+    display: none;
     position: absolute;
-    top: 120px;
+    top: 100px;
     left: 5%;
     right: 5%;
     width: 90%;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: var(--background-cl);
+    background: var(--background-cl);
     border: 1px solid #ffff;
-    border-top: 0;
+    border-top: none;
     border-radius: 0 0 10px 10px;
+    z-index: 3;
+    padding: 45px 30px;
   }
 
-  .usernaranja {
-    padding: 0;
+  .home img {
+    display: none;
   }
-  /**  Hero */
-  #hero {
-    flex-wrap: wrap;
+  .list ul {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
-  .hero-title {
+  .list ul li a {
+    font-family: var(--font-monts);
+    color: #fff;
+  }
+  .menu-label {
     display: flex;
+    order: 2;
+    cursor: pointer;
+    padding: 0 20px 0 0;
+  }
+  .menu-label img {
+    width: 38px;
+    height: 30px;
+  }
+  #menu-toggle:checked + .list {
+    display: flex;
+  }
+
+  #cart-label {
+    padding-right: 0px;
+  }
+
+  /**  Hero */
+
+  .img-pizzas {
+    display: none;
   }
 
   .hero-title > h1 {
@@ -46,7 +72,16 @@
     left: 25%;
   } */
 
-  .img-pizzas {
-    padding-top: 50px;
+  /*! Recomendacion  */
+  .section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    padding-bottom: 270px;
   }
 }
